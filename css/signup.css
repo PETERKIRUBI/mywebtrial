@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: linear-gradient(135deg, #9d00ff, #0072ff);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 14px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 420px;
+}
+.logo {
+    display: grid;
+    margin:0 auto 20px;
+    width: 100px;
+    height: 100px;
+    place-items: center;
+    background-color: #9d00ff;
+    border-radius: 36%;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+
+}h1,.subtitle,.login {
+    text-align: center;
+    margin-bottom: 20px;
+}
+h1 {
+    font-size: 23px;
+    color: #333;
+}
+.subtitle {
+    font-size: 16px;
+    color: #666;
+
+}
+.input-group {
+    margin-bottom: 20px;
+}
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+}
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;;
+}
+.input-group input:focus {
+    border-color: #9d00ff;
+    outline: none;
+}
+.terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    color: #666;
+    font-size: medium;
+}   
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #9d00ff;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+}
+button:hover {
+    background-color: #0072ff;
+}  
+.login {
+    font-size: 15px;
+    color: #666;
+    margin-top: 10px;
+}
+a {
+    color: #9d00ff;
+    text-decoration: none;
+}a:hover {
+    text-decoration: underline;
+    color: #0072ff;
+}
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .subtitle {
+        font-size: 14px;
+    }
+    button {
+        font-size: 14px;
+    }
+}
